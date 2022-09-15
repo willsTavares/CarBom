@@ -8,8 +8,8 @@ const { Navigator, Screen } = createBottomTabNavigator();
 function TabsNavigator() {
   return (
     <Navigator>
-      <Screen name="Home" component={Home} />
-      <Screen name="Details" component={Details} />
+      <Screen name="Home" component={Home} options={{ headerShown: false }} />
+      <Screen name="Details" component={Details} options={{ headerShown: false }}/>
     </Navigator>
   );
 }

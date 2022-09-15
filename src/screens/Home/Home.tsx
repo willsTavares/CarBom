@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 import { TextInput, HStack, Stack, Button } from "@react-native-material/core";
 import * as S from './styles'
 import { NavigationContainer } from '@react-navigation/native';
@@ -8,8 +8,9 @@ import { NavigationContainer } from '@react-navigation/native';
 function Home({navigation}: {navigation: any}) {
   return (
     <S.Container>
-      <S.Input  style={{ margin: 16 }} />
-      <S.Input  style={{ margin: 16 }} />
+      {/* <Image source={require('../../assets/ifix-logo.png')} />; */}
+      <S.Input placeholder="Usuário" style={{ margin: 16 }} />
+      <S.Input placeholder="Senha" style={{ margin: 16 }} />
       <Stack center spacing={12}>
       <HStack  center  m={8} spacing={12}>
         <S.ButtonSingUp>
