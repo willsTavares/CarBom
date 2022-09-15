@@ -1,11 +1,29 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import { TextInput, HStack, Stack, Button } from "@react-native-material/core";
+import * as S from './styles'
+import { NavigationContainer } from '@react-navigation/native';
 
-function Home() {
+
+function Home({navigation}: {navigation: any}) {
   return (
-    <View>
-      <Text>Teste!</Text>
-    </View>
+    <S.Container>
+      <S.Input  style={{ margin: 16 }} />
+      <S.Input  style={{ margin: 16 }} />
+      <Stack center spacing={12}>
+      <HStack  center  m={8} spacing={12}>
+        <S.ButtonSingUp>
+          <S.TextWhite> CADASTRAR </S.TextWhite>
+        </S.ButtonSingUp>
+        <S.ButtonSingIn >
+          <S.TextButtonSingIn onPress={() => navigation.navigate('Details')}> ENTRAR </S.TextButtonSingIn>
+        </S.ButtonSingIn >
+      </HStack>
+        <S.ButtonForgottenPassword>
+          <S.TextWhite> ESQUECEU A SENHA?</S.TextWhite>
+        </S.ButtonForgottenPassword>
+      </Stack>
+    </S.Container>
   );
 }
 

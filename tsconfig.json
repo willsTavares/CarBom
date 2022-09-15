@@ -3,6 +3,7 @@
   "extends": "@tsconfig/react-native/tsconfig.json",     /* Recommended React Native TSConfig base */
   "compilerOptions": {
     "skipLibCheck": true,
+    "types": ["react-native", "jest", "styled-components-react-native"],
     "baseUrl": ".",
     "paths": {
       "@screens/*": ["src/screens/*"],
