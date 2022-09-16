@@ -1,11 +1,20 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import * as S from './styles'
+import MechanicsCard from './MechanicsCard';
 
-function Details() {
+
+function Details({navigation}: {navigation: any}) {
   return (
-    <View>
-      <Text>Details</Text>
-    </View>
+    <S.Container>
+      <S.Input placeholder="Pesquisar"/>
+      <S.Title>Mêcanicas</S.Title>
+      <MechanicsCard navigation={navigation.navigate('Working')}/>
+      <MechanicsCard navigation={navigation.navigate('Working')}/>
+      <MechanicsCard navigation={navigation.navigate('Working')}/>
+      <MechanicsCard navigation={navigation.navigate('Working')}/>
+      <MechanicsCard navigation={navigation.navigate('Working')}/>
+    </S.Container>
   );
 }
 
