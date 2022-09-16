@@ -54,3 +54,13 @@ export const TextButtonSingIn = styled.Text`
         font-size: 15px;
     `}
 `;
+
+
+export const TextTitle = styled.Text`
+    ${({theme}) => css`
+        color: ${theme.color.textColor};
+        font-size: 30px;
+        text-align: center;
+        padding: 40px;
+    `}
+`;

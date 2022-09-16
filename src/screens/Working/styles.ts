@@ -8,38 +8,37 @@ export const Container = styled.View`
     `}
 `;
 
-
 export const TextWhite = styled.Text`
     ${({theme}) => css`
         color: ${theme.color.textColor};
-        font-size: 20px;
+        font-size: 15px;
     `}
 `;
 
-
-export const Title = styled.Text`
+export const TextTitle = styled.Text`
     ${({theme}) => css`
         color: ${theme.color.textColor};
         font-size: 30px;
-        font-weight: bold;
-        margin: 10px
+        text-align: center;
+        padding: 60px;
     `}
 `;
 
-export const Input = styled(TextInput)`
-    ${({theme}) => css`
-        background: ${theme.color.inputColor};
-        border-radius: 3px;
-        color: ${theme.color.textColor};
-        margin: 10px;
-    `}
-`;
 
-export const ButtonDescription = styled(TouchableOpacity)`
+export const ButtonGoBack = styled(TouchableOpacity)`
     ${({theme}) => css`
-        background: ${theme.color.inputColor};
+        background: ${theme.color.buttonColor};
         border-radius: 3px;
-        margin: 4px;
+        margin: 3px;
         padding: 10px;
+        align: center;
     `}
 `;
+
+export const TextGoBack = styled.Text`
+    ${({theme}) => css`
+        color: ${theme.color.secondary};
+        font-size: 15px;
+    `}
+`;
+
